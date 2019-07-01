@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+  
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# enable interruption signal handling
+trap - INT TERM
+
+docker run --rm \
+        -t $(tty &>/dev/null && echo "-i") \
+        -e "ACCESS_KEY_ID=${ALI_ACCESS_KEY}" \
+        -e "ACCESS_KEY_SECRET=${ALI_ACCESS_SECRET}" \
+        -e "REGION=${ALI_DEFAULT_REGION}" \
+        -v "$(pwd):/project" \
+        raghumbalgi84/multi_cloud_cli_image  aliyun \
+        "$@"
