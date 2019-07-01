@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -o errexit
+set -o nounset
+set -o pipefail
+
+# enable interruption signal handling
+trap - INT TERM
+
+docker run --rm \
+	-t $(tty &>/dev/null && echo "-i") \
+	-e "AZURE_USER_NAME=${AZURE_USER_NAME}" \
+    -e "AZURE_PASSWORD=${AZURE_PASSWORD}" \
+	--entrypoint "/azure_cli_executor.sh"  raghumbalgi84/multi_cloud_cli_image "$@"
+	
