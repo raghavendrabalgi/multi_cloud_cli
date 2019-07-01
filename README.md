@@ -7,13 +7,13 @@ How to use it
 3. To run the CLI command you need to first download and place individual cloud shell scripts file in it into your path `/usr/local/bin/` directory. This file basically run the docker image and brings up the container to run cli command on it.
 	Run below commands to achieve step 3
 
-curl -o /usr/local/bin/aws https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/aws && chmod a+x /usr/local/bin/aws
+		curl -o /usr/local/bin/aws https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/aws && chmod a+x /usr/local/bin/aws
 
-curl -o /usr/local/bin/az https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/az && chmod a+x /usr/local/bin/az
+		curl -o /usr/local/bin/az https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/az && chmod a+x /usr/local/bin/az
 
-curl -o /usr/local/bin/gcloud https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/gcloud && chmod a+x /usr/local/bin/gcloud
+		curl -o /usr/local/bin/gcloud https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/gcloud && chmod a+x /usr/local/bin/gcloud
 
-curl -o /usr/local/bin/aliyun https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/aliyu && chmod a+x /usr/local/bin/aliyun
+		curl -o /usr/local/bin/aliyun https://raw.githubusercontent.com/raghavendrabalgi/multi_cloud_cli/master/aliyu && chmod a+x /usr/local/bin/aliyun
 
 
 
