@@ -18,11 +18,13 @@ curl -o /usr/local/bin/aliyun https://raw.githubusercontent.com/raghavendrabalgi
 
 
 4. To run aws cli commands create below environment variable with your account keys.
-      	export AWS_ACCESS_KEY_ID="<id>"
+      	        
+		export AWS_ACCESS_KEY_ID="<id>"
 		export AWS_SECRET_ACCESS_KEY="<key>"
 		export AWS_DEFAULT_REGION="<region>"
 
     Run aws command as below 
+		
 		REMXYZ:multi_cloud_cli newuser$ aws s3 ls
 		2019-05-03 11:50:10 08-86-pxyz
 		2019-03-13 05:46:09 abcd-new
@@ -34,14 +36,17 @@ curl -o /usr/local/bin/aliyun https://raw.githubusercontent.com/raghavendrabalgi
 		export ALI_DEFAULT_REGION="<some-region>”
 
 	Run aliyun command as below 
+		
 		REMXYZ:multi_cloud_cli newuser$ aliyun ecs DescribeRegions
 
 
 6. To run azure cli commands create below environment variable  as with your account username/pwd.
-	export AZURE_USER_NAME="<xyz>"
-	export AZURE_PASSWORD="<abc>"
+	
+		export AZURE_USER_NAME="<xyz>"
+		export AZURE_PASSWORD="<abc>"
 
 	Run azure command as below
+	   
 	   REMXYZ:multi_cloud_cli newuser$ az vm list
 		[			
   
@@ -63,6 +68,7 @@ curl -o /usr/local/bin/aliyun https://raw.githubusercontent.com/raghavendrabalgi
 			Welcome! This command will take you through the configuration of gcloud.
 
 	Run gcloud command as below 
+			
 			REMXYZ:multi_cloud_cli newuser$ gcloud compute instances list
 			NAME  ZONE  MACHINE_TYPE PREEMPTIBLE  INTERNAL_IP    EXTERNAL_IP      STATUS
 			test_instance  asia-east1-a   n1-standard-110.10.10.20 2.2.2.2        RUNNING
