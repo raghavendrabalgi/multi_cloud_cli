@@ -17,7 +17,7 @@ How to use it
 
 
 
-4. To run aws cli commands create below environment variable with your account keys.
+4. To run aws cli commands create below environment variable with your account keys.You can have these env varibales in `~/.bash_profile` or ` ~/.bashrc` to have it permanently and available anytime.
       	        
 		export AWS_ACCESS_KEY_ID="<id>"
 		export AWS_SECRET_ACCESS_KEY="<key>"
@@ -29,7 +29,7 @@ How to use it
 		2019-05-03 11:50:10 08-86-pxyz
 		2019-03-13 05:46:09 abcd-new
 
-5. To run aliyun cli commands create below environment variable with your account keys.
+5. To run aliyun cli commands create below environment variable with your account keys.You can have these env varibales in `~/.bash_profile` or ` ~/.bashrc` to have it permanently and available anytime.
 
 		export ALI_ACCESS_KEY="<abcd>"
 		export ALI_ACCESS_SECRET="<xyz>"
@@ -40,7 +40,7 @@ How to use it
 		REMXYZ:multi_cloud_cli newuser$ aliyun ecs DescribeRegions
 
 
-6. To run azure cli commands create below environment variable  as with your account username/pwd.
+6. To run azure cli commands create below environment variable  as with your account username/pwd.You can have these env varibales in `~/.bash_profile` or ` ~/.bashrc` to have it permanently and available anytime.
 	
 		export AZURE_USER_NAME="<xyz>"
 		export AZURE_PASSWORD="<abc>"
