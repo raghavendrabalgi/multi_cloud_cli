@@ -5,6 +5,7 @@ RUN apt-get update
 RUN apt-get install -y python-pip  git openssh-client openssh-server sshpass
 RUN pip install --upgrade pip
 RUN apt-get update;apt-get install curl -y
+RUN apt-get install groff -y
 
 
 #AWS
